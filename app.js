@@ -113,7 +113,7 @@ app.get('/posts/:id',async(req,res)=>{
 
 
 /*defining Mongodb Url */
-const MONGO_URI = 'mongodb://localhost:27017/foodie'
+const MONGO_URI = 'mongodb+srv://admin:admin@cluster0.asvkj.mongodb.net/foodie?retryWrites=true&w=majority'
 
 //Connecting to database
 mongoose.connect(MONGO_URI).then(() => {
