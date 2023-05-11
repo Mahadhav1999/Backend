@@ -88,7 +88,7 @@ app.get('/users' ,async  (req, res) => {
 
 
   //get the food data from backend to front end
-  app.get('/posts',async(req,res)=>{
+app.get('/posts',async(req,res)=>{
     try {
      const posts = await Post.find()
      res.json(posts)
